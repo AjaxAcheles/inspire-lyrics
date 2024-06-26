@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Inspire Lyrics Editor</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container-fluid text-center p-1">
+            <p>Enter New Lyrics</p>
+            <form action="{{url_for('edit_lyrics')}}" method="POST">
+                <div class="container-fluid input-group p-1">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="lyrics">{{lyrics}}</textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
